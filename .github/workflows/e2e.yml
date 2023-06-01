@@ -19,13 +19,13 @@ on:
   push:
     branches: [ develop ]
   pull_request:
-    branches: [ develop]
+    branches: [ develop ]
     types: [opened, synchronize, reopened, labeled]
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: k8s-runner-e2e
+    runs-on: test-k8s-runner
     # We allow builds:
     # 1) When triggered manually
     # 2) When it's a merge into a branch
