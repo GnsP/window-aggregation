@@ -58,8 +58,7 @@ jobs:
     - name: Checkout e2e test repo
       uses: actions/checkout@v3
       with:
-        repository: GnsP/cdap-e2e-tests
-        ref: test-local-runner
+        repository: cdapio/cdap-e2e-tests
         path: e2e
     - name: Cache
       uses: actions/cache@v3
